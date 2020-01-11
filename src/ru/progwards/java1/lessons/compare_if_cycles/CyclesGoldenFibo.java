@@ -4,8 +4,16 @@ public class CyclesGoldenFibo {
 
     public static boolean containsDigit(int number, int digit){
 
-        boolean result = number==digit;
-        return result;
+        while (number > 0) {
+
+            if (number % 10 == digit) {
+                break;
+            }
+
+            number = number / 10;
+        }
+
+        return (number > 0);
     }
 
     public static int fiboNumber(int n) {
@@ -26,26 +34,28 @@ public class CyclesGoldenFibo {
 
     }
 
-    public static boolean isGoldenTriangle(int a, int b, int c) {
+
+
+
+    public static boolean isGoldenTriangles(int a, int b, int c) {
 
         double min = 1.61703;
         double max = 1.61903;
-        double dab = (double)a/(double)b;
-        double dac = (double)a/(double)c;
-        double dcb = (double)c/(double)b;
-        double dca = (double)c/(double)a;
-        double dbc = (double)c/(double)b;
-        double dba = (double)c/(double)a;
+        double d1 = (double)(a + c)/(2*b);
+        double d2 = (double)(a + b)/(2*c);
+        double d3 = (double)(c + b)/(2*a);
 
-        boolean result = (a==b || c==b || a==c ) && ((dab>=min && dab<=max) || (dac>=min && dac<=max) || (dcb>=min && dcb<=max) || (dca>=min && dca<=max) || (dbc>=min && dbc<=max) || (dba>=min && dba<=max));
-
+        boolean result = (d1>=min && d1<=max) || (d2>=min && d2<=max) || (d3>=min && d3<=max);
 
         return result;
+
+
     }
 
 
 
     public static void main(String[] args) {
+
 
         int fiba = 1;
         int temp = 0;
