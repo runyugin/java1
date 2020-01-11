@@ -4,16 +4,13 @@ public class CyclesGoldenFibo {
 
     public static boolean containsDigit(int number, int digit){
 
-        while (number > 0) {
-
-            if (number % 10 == digit) {
-                break;
+        do {
+            if (number % 10 == digit){
+                return true;
             }
-
-            number = number / 10;
-        }
-
-        return (number > 0);
+            number /= 10;
+        } while (number > 0);
+        return false;
     }
 
     public static int fiboNumber(int n) {
@@ -37,7 +34,7 @@ public class CyclesGoldenFibo {
 
 
 
-    public static boolean isGoldenTriangles(int a, int b, int c) {
+    public static boolean isGoldenTriangle(int a, int b, int c) {
 
         double min = 1.61703;
         double max = 1.61903;
