@@ -9,7 +9,13 @@ public class ReverseDigits {
         return a + b + c;
     }
 
+    static double fractional(double num){
+        double z = num % 1;
+        return z;
+    }
+
     public static void main(String[] args) {
         reverseDigits(123);
+        fractional(1.53);
     }
 }
