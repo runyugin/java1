@@ -4,8 +4,8 @@ public class Cow extends Animal {
 
 
 
-    public Cow(double weight, double koff) {
-        super(weight, koff);
+    public Cow(double weight) {
+        super(weight);
     }
 
     AnimalKind cow = AnimalKind.COW;

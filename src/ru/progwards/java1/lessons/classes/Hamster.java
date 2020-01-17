@@ -4,8 +4,8 @@ public class Hamster extends Animal{
 
 
 
-    public Hamster(double weight, double koff) {
-        super(weight, koff);
+    public Hamster(double weight) {
+        super(weight);
     }
 
     AnimalKind hamster = AnimalKind.HAMSTER;

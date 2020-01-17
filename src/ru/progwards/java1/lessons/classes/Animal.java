@@ -3,11 +3,10 @@ package ru.progwards.java1.lessons.classes;
 public class Animal {
 
     double weight;
-    double koff;
+    double koff = 0.02;
 
-    public Animal(double weight, double koff){
+    public Animal(double weight){
         this.weight = weight;
-        this.koff = koff;
     }
 
 

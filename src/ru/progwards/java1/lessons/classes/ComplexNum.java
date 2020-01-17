@@ -2,8 +2,8 @@ package ru.progwards.java1.lessons.classes;
 
 public class ComplexNum {
 
-    int a;
-    int b;
+    public int a = 0;
+    public int b = 0;
 
 
     public ComplexNum(int a, int b){
@@ -11,9 +11,6 @@ public class ComplexNum {
         this.b = b;
     }
 
-    public ComplexNum newComplexNum(int a, int b) {
-        return new ComplexNum(a, b);
-    }
 
 @Override
     public String toString(){
