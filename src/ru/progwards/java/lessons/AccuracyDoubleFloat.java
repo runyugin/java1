@@ -1,4 +1,4 @@
-package ru.progwards.java1.lessons.basics;
+package ru.progwards.java.lessons;
 
 public class AccuracyDoubleFloat {
 

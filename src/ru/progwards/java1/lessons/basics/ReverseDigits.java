@@ -6,6 +6,10 @@ public class ReverseDigits {
         number = number / 10;
         int b = (number % 10) * 10;
         int c = number / 10;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(a + b + c);
         return a + b + c;
     }
 
