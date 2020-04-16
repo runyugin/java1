@@ -14,6 +14,6 @@ public class SumBits {
     }
 
     public static void main(String[] args) {
-        sumBits((byte) 0b0100101);
+        sumBits((byte) 0b00100101);
     }
 }
