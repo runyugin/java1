@@ -32,7 +32,6 @@ public class Animal {
     }
 
     public double getFoodCoeff(){
-        koff = 0.02;
         return koff;
     }
 
