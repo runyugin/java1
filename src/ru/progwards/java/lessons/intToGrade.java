@@ -33,6 +33,6 @@ public class intToGrade {
     }
 
     public static void main(String[] args) {
-        intToGrade(2);
+        intToGrade(4);
     }
 }
