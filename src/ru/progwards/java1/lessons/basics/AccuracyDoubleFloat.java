@@ -9,18 +9,19 @@ public class AccuracyDoubleFloat {
 
     public static double volumeBallDouble(double radius){
         double r = radius;
-        result = (4/3)*pi*r*r*r;
+        result = 4.0/3.0*pi*r*r*r;
         return result;
     }
 
     public static float volumeBallFloat(float radius){
         float r = radius;
-        result = (4/3)*pi*r*r*r;
+        result = 4/3*((float)pi)*r*r*r;
         return (float)result;
     }
 
     public static double calculateAccuracy(double radius){
         result = volumeBallDouble(radius) - volumeBallFloat((float)radius);
+        System.out.println(result);
         return result;
     }
 

@@ -33,12 +33,12 @@ public class Astronomy {
     }
 
     public static Double earthVsMercury() {
-        result = earthSquare() - mercurySquare();
+        result = earthSquare()/mercurySquare();
         return result;
     }
 
     public static Double earthVsJupiter() {
-        result = earthSquare() - jupiterSquare();
+        result = earthSquare()/jupiterSquare();
         return result;
     }
 
