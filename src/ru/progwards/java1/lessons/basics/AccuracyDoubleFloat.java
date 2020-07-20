@@ -21,7 +21,6 @@ public class AccuracyDoubleFloat {
 
     public static double calculateAccuracy(double radius){
         result = volumeBallDouble(radius) - volumeBallFloat((float)radius);
-        System.out.println(result);
         return result;
     }
 
