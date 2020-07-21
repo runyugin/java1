@@ -15,7 +15,9 @@ public class CyclesGoldenFibo {
             //System.out.println(res);
             number = number / 10;
         }
-
+        if (number == digit) {
+            result = true;
+        }
         //System.out.println(result);
         return result;
     }
@@ -61,6 +63,10 @@ public class CyclesGoldenFibo {
 
 
     public static void main(String[] args) {
+
+
+        containsDigit(0, 0);
+
 
         int fiba = 1;
         int temp = 0;

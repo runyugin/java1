@@ -5,7 +5,7 @@ public class TriangleInfo {
     public static boolean isTriangle(int a, int b, int c){
         boolean result = false;
 
-        if((a!=0 && b!=0 && c!=0)&&(a+b>c || a+c>b || b+c>a)){
+        if((a!=0 && b!=0 && c!=0)&&((a+b)>c && (a+c)>b && (b+c)>a)){
             result = true;
         }
         //System.out.println(result);
@@ -37,7 +37,7 @@ public class TriangleInfo {
 
 
     public static void main(String[] args) {
-        isTriangle(1, 1, 1);
+        isTriangle(4, 1, 5);
         isRightTriangle(6, 10, 8);
         isIsoscelesTriangle(8, 3, 8);
     }
